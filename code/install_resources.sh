@@ -2,6 +2,16 @@
 pip install openpyxl
 python -c  "import nltk;  nltk.download('averaged_perceptron_tagger')"
 
+#make directories
+mkdir ./resources/en/fasttext
+mkdir ./resources/en/PPDB
+mkdir ./resources/es/fasttext
+mkdir ./resources/pt/fasttext
+mkdir ./results
+mkdir ./results/en
+mkdir ./results/es
+mkdir ./results/pt
+
 
 #installing resources for English
 wget https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip -O ./resources/en/fasttext/crawl-300d-2M-subword.zip
