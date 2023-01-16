@@ -104,14 +104,14 @@ OS commands:
 
 (1) Use the install_resources.sh script to install some required libraries and download the pre-trained fasttext word embeddings for EN, ES, PT  and the English PPDB
     
-(2) Modify the run_LSBert2_<lang>.sh scripts to select the pre-trained transformer and the parameters.
+(2) Modify the run_LSBert2_language.sh scripts to select the pre-trained transformer and the parameters.
        
     Add the information about the pre-trained model and their tokenizer in the following files:    
      - ./pytorch_pretrained_bert/modeling.py   
      - ./pytorch_pretrained_bert/tokenizer.py   
     
     
-(3) run "./run_LSBert2_<lang>.sh"
+(3) run "./run_LSBert2_language.sh"
 
 (4) run "python tsar_eval.py"  with its necessary parameters  to get the evaluation results.
 
